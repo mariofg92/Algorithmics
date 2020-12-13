@@ -1,0 +1,7 @@
+﻿Tenemos una estructura nodo con 4 campos, x,y,posicion,flag. 
+Mete en un vector tantos nodos como numero de ciudades le hayamos pasado al fichero y genera esos nodos. 
+Los ejes x,y tienen valores aleatorios entre 0 y 10000.
+Establecemos la cota inicial con la primera rama que explora. 
+El costo de la mejor solucion obtenida lo vamos guardando en un vector de nodos, inicializada con el costo de esta primera rama.
+Calculamos la distancia absoluta del siguiente nivel, si esta es menor que la cota anterior, expande este nodo y lo añadimos a nuestro vector solucion.
+En caso contrario, poda esa rama y mediante un campo "bandera" controlamos que esa rama esta podada. 
